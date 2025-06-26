@@ -148,7 +148,7 @@ const menuData = [
     },
     {
         name: "Vegetable Pulao",
-        img: "assets/vegetable-pulao.jpg",
+        img: "assets/Vegetable-Pulao.jpg",
         price: 250,
         ingredients: "Basmati rice, mixed vegetables, spices",
         rating: 4.5
