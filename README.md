@@ -33,14 +33,7 @@
 <p align="center">
   <b>Support our mission!</b> <a href="https://www.buymeacoffee.com/yourname"><img src="https://img.shields.io/badge/Donate-Buy%20Me%20a%20Coffee-yellow?logo=buy-me-a-coffee"/></a>
 </p>
-
-
-<!-- LOGO & TITLE -->
-<p align="center">
-  <img src="assets/logo.png" alt="Kuber Logo" width="100"/>
-</p>
-<h1 align="center">Kuber Vegetarian Hotel</h1>
-<p align="center"><em>Delicious vegetarian cuisine, beautifully presented.</em></p>
+ 
 
 <!-- LIVE DEMO BADGE -->
 <p align="center">
