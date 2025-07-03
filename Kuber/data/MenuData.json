@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Bruschetta",
+        "description": "Grilled bread topped with tomatoes and basil.",
+        "price": 8.99,
+        "category": "Starters",
+        "dietary": ["Vegetarian"]
+    },
+    {
+        "name": "Grilled Salmon",
+        "description": "Fresh salmon fillet grilled to perfection.",
+        "price": 19.99,
+        "category": "Main Course",
+        "dietary": ["Gluten-Free"]
+    },
+    {
+        "name": "Chocolate Cake",
+        "description": "Rich chocolate cake with a creamy frosting.",
+        "price": 6.99,
+        "category": "Desserts",
+        "dietary": ["Vegetarian"]
+    },
+    {
+        "name": "Mojito",
+        "description": "Refreshing cocktail with mint and lime.",
+        "price": 10.99,
+        "category": "Drinks",
+        "dietary": []
+    }
+]

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuer Vegetarian Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.png">
+    <link rel="" href="MenuData.json">
+    <script defer src="scripts.js"></script>
+    <!-- Import Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Responsive Navbar Start -->
+        <nav> 
+            <div class="navbar">
+                <div class="container nav-container" style="position: relative;">
+                    <input class="checkbox" type="checkbox" id="nav-toggle" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="menu-items">
+                        <li><a href="#home" data-page="home" class="active">Home</a></li>
+                        <li><a href="#Menu" data-page="menu">Menu</a></li>
+                        <li><a href="#About us" data-page="about">About Us</a></li>
+                        <li><a href="#contact" data-page="contact">Contact Us</a></li>
+                        <li><a href="#location" data-page="location">Location</a></li>
+                    </div>
+                    <div class="logo" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: flex; align-items: center;">
+                        <img src="assets/logo.png" alt="Kuer Logo" style="height:32px;vertical-align:middle;"> <span>kuber</span>
+                    </div>
+                    <div id="theme-switcher" style="position:absolute;right:20px;top:50%;transform:translateY(-50%);z-index:10;">
+                      <input type="checkbox" class="checkbox" id="checkbox">
+                      <label for="checkbox" class="checkbox-label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="ball"></span>
+                      </label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Responsive Navbar End -->
+    </header>
+    <main id="page-content">
+        <!-- Home Page Content Loaded Here -->
+    </main>
+    <footer>
+        <p>&copy; 2025 Kuer Vegetarian Hotel. All rights reserved.</p>
+    </footer>
+</body>
+</html>
