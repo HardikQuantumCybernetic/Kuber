@@ -10,23 +10,23 @@ const todaysSpecial = {
 
 const galleryImages = [
     {
-        src: "assets/gallery1.jpg",
+        src: "assets/Restaurant_Ambiance.png",
         alt: "Restaurant Ambiance"
     },
     {
-        src: "assets/gallery2.jpg",
+        src: "assets/Signature_Dish.jpg",
         alt: "Signature Dish"
     },
     {
-        src: "assets/gallery3.jpg",
+        src: "assets/Family_Dining.jpg",
         alt: "Family Dining"
     },
     {
-        src: "assets/gallery4.jpg",
+        src: "assets/Special_Event.jpg",
         alt: "Special Event"
     },
     {
-        src: "assets/gallery5.jpg",
+        src: "assets/Chef_at_Work.jpg",
         alt: "Chef at Work"
     }
 ];
@@ -941,6 +941,7 @@ function startTypingEffect() {
     let charIndex = 0;
     let isDeleting = false;
     let delay = 100;
+    let lastText = "";
 
     function type() {
         const currentText = typingTexts[textIndex];
@@ -954,6 +955,11 @@ function startTypingEffect() {
             delay = 80;
         }
 
+        // Responsive fix: ensure scroll/resize doesn't cut text
+        typingElement.style.maxWidth = "100vw";
+        typingElement.style.wordBreak = "break-word";
+        typingElement.style.whiteSpace = "normal";
+
         if (!isDeleting && charIndex === currentText.length) {
             isDeleting = true;
             delay = 1200;
@@ -964,6 +970,8 @@ function startTypingEffect() {
         }
         setTimeout(type, delay);
     }
+    // Clear previous text for SPA reloads
+    typingElement.textContent = "";
     type();
 }
 
@@ -980,25 +988,25 @@ function loadPage(page) {
 // --- Customer Reviews Carousel Data & Logic ---
 const reviewsData = [
     {
-        name: "Priya S.",
+        name: "Akshay Kumar",
         photo: "assets/customer1.jpg",
         rating: 5,
         review: "The best vegetarian food in town! The ambiance and service are top-notch."
     },
     {
-        name: "Rahul M.",
+        name: "Allu Arjun",
         photo: "assets/customer2.jpg",
         rating: 5,
         review: "A must-visit for anyone who loves pure veg food. Highly recommended!"
     },
     {
-        name: "Anjali T.",
+        name: "Naveen Kumar Gowda",
         photo: "assets/customer3.jpg",
         rating: 4.8,
         review: "Delicious food, great variety, and friendly staff. Will visit again!"
     },
     {
-        name: "Vikas P.",
+        name: "Hrithik Roshan",
         photo: "assets/customer4.jpg",
         rating: 5,
         review: "Authentic taste and cozy atmosphere. Loved the desserts!"
